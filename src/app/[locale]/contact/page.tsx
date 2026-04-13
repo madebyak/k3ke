@@ -18,17 +18,17 @@ export default function ContactPage() {
     return (
         <div className="bg-white min-h-screen text-black font-mono selection:bg-black selection:text-white">
             <main className="min-h-screen p-6 md:p-12 flex flex-col">
-                <header className="grid grid-cols-12 mb-12 md:mb-20 text-[10px] sm:text-xs md:text-base gap-x-2 md:gap-x-4">
-                    <div className={`col-start-1 ${locale === "ar" ? "col-span-2" : "col-span-1"}`}>
+                <header className="flex items-center gap-x-3 mb-12 md:mb-20 text-[10px] sm:text-xs md:text-base md:grid md:grid-cols-12 md:gap-x-4">
+                    <div className={`${locale === "ar" ? "md:col-span-2" : "md:col-span-1"}`}>
                         <Link
                             href={`/${locale}/bio`}
-                            className="cursor-pointer relative inline-block pb-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-black after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0_0.35_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                            className="cursor-pointer relative inline-block pb-1 whitespace-nowrap after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-black after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0_0.35_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
                         >
                             {t("nav.bio")}
                         </Link>
                     </div>
 
-                    <div className={`${locale === "ar" ? "col-start-3 col-span-8" : "col-start-2 col-span-9"}`}>
+                    <div className={`flex-1 md:flex-none ${locale === "ar" ? "md:col-start-3 md:col-span-8" : "md:col-start-2 md:col-span-9"}`}>
                         <Link
                             href={`/${locale}`}
                             className="cursor-pointer relative inline-block pb-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-black after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0_0.35_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
@@ -38,7 +38,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* En / Ar Language Switcher */}
-                    <div className="col-start-11 col-span-1 flex gap-2 items-center">
+                    <div className="shrink-0 md:col-start-11 md:col-span-1 flex gap-1 items-center">
                         {locale === "en" ? (
                             <span className="font-medium opacity-100">En</span>
                         ) : (
@@ -62,8 +62,8 @@ export default function ContactPage() {
                         )}
                     </div>
 
-                    <div className="col-start-12 col-span-1">
-                        <span className="cursor-pointer relative inline-block pb-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
+                    <div className="shrink-0 md:col-start-12 md:col-span-1">
+                        <span className="cursor-pointer relative inline-block pb-1 whitespace-nowrap after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
                             {t("nav.contact")}
                         </span>
                     </div>
