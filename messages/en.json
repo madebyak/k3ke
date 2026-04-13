@@ -1,0 +1,38 @@
+{
+    "nav": {
+        "bio": "Bio",
+        "work": "Work",
+        "contact": "Contact"
+    },
+    "hero": {
+        "firstName": "ibrahim",
+        "lastName": "hussein",
+        "showreel": "Baghdad's\nCinematic\nIcon 2026©",
+        "aka": "AKA \"K3KE\"",
+        "bio": "Hussein Ibrahim, known as 'K3KE', is an actor and producer from Baghdad—Iraq, and a pioneer of Iraq's digital media scene and content creation."
+    },
+    "work": {
+        "sectionLabel": "SELECTED WORK"
+    },
+    "footer": {
+        "sectionLabel": "CONTACT",
+        "headline": {
+            "get": "Get",
+            "in": "In",
+            "touch": "Touch"
+        },
+        "copyright": "All Rights Reserved © 2026",
+        "credit": "Ibrahim Hussein x Actor x Producer",
+        "backToTop": "Back to top"
+    },
+    "contactPage": {
+        "heading": "Get in Touch",
+        "subtext": "Currently accepting new projects and collaborations.",
+        "emailLabel": "Email:",
+        "emailValue": "To be added",
+        "phoneLabel": "Phone:",
+        "phoneValue": "To be added",
+        "instagramLabel": "Instagram",
+        "instagramLink": "https://www.instagram.com/k3ke_96/"
+    }
+}
