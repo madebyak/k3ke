@@ -28,7 +28,7 @@ export default async function LocaleLayout({
                 <PageTransition>
                     {children}
                 </PageTransition>
-                <GridOverlay />
+                {/* <GridOverlay /> */}
             </SmoothScroll>
         </NextIntlClientProvider>
     );
